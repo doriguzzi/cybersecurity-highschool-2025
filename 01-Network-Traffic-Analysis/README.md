@@ -1,5 +1,5 @@
 # Analisi del traffico di rete 
-In questo laboratorio useremo alcuni strumenti per l'analisi della configurazione del interfacce di rete e del traffico di rete che le attraversa. Useremo questi strumenti per analizzare le tracce di traffico contenenti alcuni attacchi di tipo Distributed Denial of Service (DDoS).
+In questo laboratorio useremo alcuni strumenti per l'analisi della configurazione del interfacce di rete e del traffico di rete che le attraversa. Useremo questi strumenti per catturare traffico di rete dalle interfacce della macchina virtuale e per analizzare le tracce di traffico contenenti alcuni attacchi di tipo Distributed Denial of Service (DDoS).
 
 ## ifconfig
 L’utilità ifconfig viene utilizzata per assegnare un indirizzo IP a un’interfaccia di rete, e per configurare/vedere i parametri dell’interfaccia di rete. 
