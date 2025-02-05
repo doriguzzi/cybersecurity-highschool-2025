@@ -53,3 +53,6 @@ Avvia anche ```firefox``` per generare un po' di traffico web. I pacchetti di qu
 |--|
 
 Per aprire e visualizzare una traccia di traffico, andare nel menu ```file->Apri```, e scegliere uno dei files ```pcap``` nella cartella ```Dataset``` all'interno della cartella ```cybersecurity-highschool-2025```.
+
+| <img src="./wireshark-open.png" width="60%">  |
+|--|
