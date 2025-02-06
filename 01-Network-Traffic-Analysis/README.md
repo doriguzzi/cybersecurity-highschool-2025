@@ -56,3 +56,14 @@ Per aprire e visualizzare una traccia di traffico, andare nel menu ```file->Apri
 
 | <img src="./wireshark-open.png" width="60%">  |
 |--|
+
+## Traffico pre-processato
+Per aprire i flussi di traffico pre-processati e salvati in formato ```hdf5``` e' necessario installare un'applicazione nella macchina virtuale. Per fare cio', dal terminale eseguire il seguente comando:
+```
+sudo apt install hdf-coompass
+```
+
+Dalla barra del menu del sistema operativo, avviate il programma ```HDFCompass``` ed usatelo per aprire e visualizzare il contenuto dei files con estensione ```hdf5```.
+
+| <img src="./hdfcompass.png" width="60%">  |
+|--|
