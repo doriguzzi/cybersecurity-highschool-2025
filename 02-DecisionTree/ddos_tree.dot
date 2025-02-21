@@ -1,0 +1,25 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="UDP_length <= 153.5\ngini = 0.8\nsamples = 817\nvalue = [175, 168, 162, 159, 153]\nclass = benign", fillcolor="#fffefd"] ;
+1 [label="packet_length <= 41.3\ngini = 0.674\nsamples = 496\nvalue = [175, 6, 162, 0, 153]\nclass = benign", fillcolor="#fefaf7"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="TCP_flags_syn <= 1.0\ngini = 0.047\nsamples = 166\nvalue = [4, 0, 162, 0, 0]\nclass = syn", fillcolor="#3ee6c6"] ;
+1 -> 2 ;
+3 [label="gini = 0.0\nsamples = 4\nvalue = [4, 0, 0, 0, 0]\nclass = benign", fillcolor="#e58139"] ;
+2 -> 3 ;
+4 [label="gini = 0.0\nsamples = 162\nvalue = [0, 0, 162, 0, 0]\nclass = syn", fillcolor="#39e5c5"] ;
+2 -> 4 ;
+5 [label="IP_flags_df <= 5.0\ngini = 0.516\nsamples = 330\nvalue = [171, 6, 0, 0, 153]\nclass = benign", fillcolor="#fcf2eb"] ;
+1 -> 5 ;
+6 [label="gini = 0.102\nsamples = 131\nvalue = [124, 6, 0, 0, 1]\nclass = benign", fillcolor="#e68844"] ;
+5 -> 6 ;
+7 [label="gini = 0.361\nsamples = 199\nvalue = [47, 0, 0, 0, 152]\nclass = webddos", fillcolor="#ed76d3"] ;
+5 -> 7 ;
+8 [label="protocols <= 2115.0\ngini = 0.5\nsamples = 321\nvalue = [0.0, 162.0, 0.0, 159.0, 0.0]\nclass = dns", fillcolor="#fdfffb"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="gini = 0.0\nsamples = 159\nvalue = [0, 0, 0, 159, 0]\nclass = udplag", fillcolor="#3c39e5"] ;
+8 -> 9 ;
+10 [label="gini = 0.0\nsamples = 162\nvalue = [0, 162, 0, 0, 0]\nclass = dns", fillcolor="#7be539"] ;
+8 -> 10 ;
+}
