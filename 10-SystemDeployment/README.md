@@ -4,7 +4,7 @@ Per eseguire il laboratorio, vanno aperti due terminali. In uno eseguiamo il net
 
 ## Terminale 1
 Far partire il network intrusion detection system con il seguente comando:
-```python NIDS-lab.py --predict_live lo --model ../06-DeepLearning/mlp_model.h5 --dataset_type DOS2019```
+```python NIDS.py --predict_live lo --model ../06-DeepLearning/mlp_model.h5 --dataset_type DOS2019```
 
 Questo comando avvia uno script Python che carica il modello MLP generato nel precedente laboratorio e che raccoglie il traffico che attraversa l'interfaccia di rete ```lo```. 
 
